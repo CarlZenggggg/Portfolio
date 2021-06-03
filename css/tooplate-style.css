@@ -19,7 +19,7 @@ body {
 
 .small-text {
   color: #5b5b5b;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 50px;
@@ -383,11 +383,11 @@ b, strong {
 }
 .owl-carousel .owl-nav .owl-prev:before {
   content: '\e833';
-  left: -45px;
+  left: -80px;
 }
 .owl-carousel .owl-nav .owl-next:before {
   content: '\e836';
-  right: -45px;
+  right: -80px;
 }
 
 .owl-theme .owl-nav [class*=owl-] {
@@ -417,6 +417,8 @@ b, strong {
 
 .contact-form {
   position: relative;
+  left: 50%;
+
 }
 .contact-form .form-control {
   background: transparent;
@@ -425,6 +427,8 @@ b, strong {
   box-shadow: none;
   font-weight: bold;
   margin: 16px 0;
+
+
 }
 .contact-form .form-control:not(textarea) {
   height: 48px;

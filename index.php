@@ -1,3 +1,40 @@
+<?php 
+
+if (isset($_POST['name']) && isset($_POST['email'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $to = 'carlzenggggg@gmail.com'
+    $message = $_POST['message'];
+    $body = '<html>
+                <body>
+                    <h2>'$message'</h2>
+                    <hr>
+                    <p>Name:<br>'.$name.'</p>
+                    <p>Email:<br>'.$email.'</p>
+                    <p>Message:<br>'.$message.'</p>
+                </body>
+              </html>';
+
+    $headers  = "From: ".$name." <".$email.">"\r\n";
+    $headers .= "Reply-To: ".$email."\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset-utf-8;
+
+    $send = mail(to, message, body, headers);
+    if ($send) {
+      echo "br";
+      echo "Thanks for connecting me, I will check the email ASAP!";
+    }else{
+      echo "error sending";
+    }
+  }
+?>
+
+
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -85,7 +122,7 @@ https://www.tooplate.com/view/2115-marvel
                         <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
                         
                         <div class="custom-btn-group mt-4">
-                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="C:/Users/carlz/Documents/GitHub/Portfolio/files/NewestResume.PDF" class="btn mr-lg-2 custom-btn" download="NewestResume"><i class='uil uil-file-alt'></i> Download Resume</a>
                           <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
                         </div>
                     </div>
@@ -223,22 +260,22 @@ https://www.tooplate.com/view/2115-marvel
         <div class="row">
           
           <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
+            <!-- <div class="google-map w-100">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
-            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+            </div> -->
+          
+            <!-- <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
                 <div class="contact-info-item">
                   <h3 class="mb-3 text-white">Say hello</h3>
-                  <p class="footer-text mb-0">010 020 0960</p>
-                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
-                </div>
+                  <p class="footer-text mb-0">705 770 5788</p>
+                  <p><a href="mailto:hello@company.co">carlzenggggg@gmail.com</a></p>
+                </div> -->
 
-                <ul class="social-links">
+                <!-- <ul class="social-links">
                      <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
                      <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
                      <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
-                </ul>
+                </ul> -->
             </div>
           </div>
 
@@ -246,7 +283,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="" method="get">
+              <form action="carlzenggggg@gmail.com" method="get">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -278,8 +315,7 @@ https://www.tooplate.com/view/2115-marvel
                <div class="row">
 
                     <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
-                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                        <p class="copyright-text text-center">Copyright &copy; 2021 Carl Zeng . All rights reserved</p>
                     </div>
                     
                </div>

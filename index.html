@@ -1,40 +1,3 @@
-<?php 
-
-if (isset($_POST['name']) && isset($_POST['email'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $to = 'carlzenggggg@gmail.com'
-    $message = $_POST['message'];
-    $body = '<html>
-                <body>
-                    <h2>'$message'</h2>
-                    <hr>
-                    <p>Name:<br>'.$name.'</p>
-                    <p>Email:<br>'.$email.'</p>
-                    <p>Message:<br>'.$message.'</p>
-                </body>
-              </html>';
-
-    $headers  = "From: ".$name." <".$email.">"\r\n";
-    $headers .= "Reply-To: ".$email."\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset-utf-8;
-
-    $send = mail(to, message, body, headers);
-    if ($send) {
-      echo "br";
-      echo "Thanks for connecting me, I will check the email ASAP!";
-    }else{
-      echo "error sending";
-    }
-  }
-?>
-
-
-
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -122,7 +85,7 @@ https://www.tooplate.com/view/2115-marvel
                         <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.</p>
                         
                         <div class="custom-btn-group mt-4">
-                          <a href="C:/Users/carlz/Documents/GitHub/Portfolio/files/NewestResume.PDF" class="btn mr-lg-2 custom-btn" download="NewestResume"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="https://megafile.cc/d/8BZz/newestresume" class="btn mr-lg-2 custom-btn" download="NewestResume"><i class='uil uil-file-alt'></i> Download Resume</a>
                           <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
                         </div>
                     </div>
@@ -283,7 +246,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="carlzenggggg@gmail.com" method="get">
+              <form action="https://formspree.io/f/xrgrqjgw" method="post">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
